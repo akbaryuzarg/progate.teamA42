@@ -1,0 +1,225 @@
+/*? ===================================== */
+/* CSS DASAR (Jangan Diganti) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+hr {    
+  width: 265px;
+  border-top: 3px solid #999;
+  margin-bottom: 10px;
+  text-align: center;
+}
+a {text-decoration: none;}
+.clear {clear: both;}
+/*? ===================================== */
+
+/*? ===================================== */
+/* CSS HEADER */
+.header-wrapper {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 0 7px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: fixed; 
+  top: 0;
+  z-index: 200;
+}
+.header.container {
+  max-width: 1170px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.header.container h1 {
+  float: left;
+  margin: 10px 0px;
+}
+.header.container ul {
+  float: right;
+  margin: 10px 0px;
+}
+.header.container ul li {
+  display: inline-block;
+  margin: 10px 0px 0px 25px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+.header.container ul li:hover {
+  color: #1FA5F8;
+  cursor: pointer;
+}
+.header.container .fa-bars {
+  display: none;
+}
+/* Akhir Header */
+/*? ===================================== */
+
+/*? ===================================== */
+/* CSS Jumbotron */
+.jumbotron-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  padding: 100px 0px;
+}
+.jumbotron.container {
+  max-width: 1170px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+.jumbotron .tulisan {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 1.6em;
+  position: relative;
+  top: 80px;
+}
+.jumbotron .tulisan h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.jumbotron .tulisan h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.jumbotron .gambar {
+  float: right;
+}
+.jumbotron .gambar img {
+  width: 500px;
+  margin-top: 10px;
+}
+/* Akhir Jumbotron */
+/*? ===================================== */
+
+/*? ===================================== */
+/* MAIN: TEAM */
+.team-wrapper {
+  width: 100%;
+  min-height: 700px;
+  padding: 30px 70px;
+  box-sizing: border-box;
+}
+.team-wrapper h1 {
+  text-align: center;
+}
+.team-container {
+  display: flex;
+  margin: auto;
+  max-width: 1170px;
+  flex-wrap: wrap;
+}
+.team-wrapper .card {
+  flex: 1;
+  height: 450px;
+  margin: 5px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 12px #ced3d6; */
+  box-shadow: 1px 5px 24px 0 rgba(68,102,242,0.05);
+  transition: all 0.3s linear;
+}
+.team-wrapper .card:hover {
+  /* box-shadow: 0 2px 30px 0px #ced3d6; */
+  box-shadow: 2px 4px 8px 1px #888888;
+  transform: translateY(-6px);
+}
+.card header {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.card header .profile {
+  width: 120px;
+  height: 120px;
+  align-self: center;
+  margin: 60px auto 10px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+/* Profile PIC Akbar */
+.card header .akbar {
+  background-image: url(img/akbar-edit-sqr.jpg);
+}
+/* Profile PIC Kedua */
+.card header .tina {
+  background-image: url(img/Tina.jpg);
+}
+/* Profile PIC Ketiga */
+.card header .amir {
+  background-image: url(img/Amir.jpg);
+}
+/* Profile PIC Keempat */
+.card header .adit {
+  background-image: url(img/adit.jpg);
+}
+.card header .social {
+  display: inline-block;
+  align-self: center;
+  font-size: 2em;
+  margin-top: 10px;
+}
+.card header a {
+  color: black;
+  padding: 0px;
+  display: inline-block;
+  cursor: pointer;
+}
+.card header .fab {
+  color: #343a40;
+  font-size: 1em;
+  transition: 0.2s ease;
+}
+.card header .fab:hover {
+  color: #5dd9f8;
+  cursor: pointer;
+  text-decoration: none;
+}
+.card header .fab:active {
+  color: #89f1a3;
+}
+.card footer {
+  height: 32%;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 20px;
+  padding: 30px 10px;
+  background-color: #ced3d6;
+  color:black;
+  box-sizing: border-box;
+}
+.card footer h1 {
+  font-weight: bolder;
+}
+.card footer h2 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 5px;
+}
+/* Akhir TEAM */
+/*? ===================================== */
+
+/*? ===================================== */
+/* CSS Footer */
+.footer-wrapper {
+  width: 100%;
+  /* background-color: #858484; */
+  background-color: rgba(34, 49, 52, 0.9);
+  color: #b3aeb5;
+  padding: 12px 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 14px;
+}
+/* Akhir Footer */
+/*? ===================================== */
